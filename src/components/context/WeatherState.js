@@ -24,7 +24,7 @@ const WeatherState = ({ children }) => {
   const getCurrentWeatherByCity = (place, units = state.units) => {
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${place}&units=${units}&appid=ca6c12c824777f7080f1c00f1d19b42a`
+        `https://api.openweathermap.org/data/2.5/weather?q=${place}&units=${units}&appid=ca6c12c824777f7080f1c00f1d19b42a`
       )
       .then((response) => {
         dispatch({
@@ -38,7 +38,7 @@ const WeatherState = ({ children }) => {
   const getCurrentWeatherByLatLon = (lat, lon, units = state.units) => {
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=ca6c12c824777f7080f1c00f1d19b42a`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=ca6c12c824777f7080f1c00f1d19b42a`
       )
       .then((response) => {
         dispatch({
