@@ -12,7 +12,7 @@ const ForecastItem = ({ item }) => {
   return (
     <div className="flex flex-col bg-gray-800 w-32 items-center text-sm text-gray-300 py-2 rounded-lg">
       <div>{day}</div>
-      <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="icon" />
+      <img src={`https://openweathermap.org/img/wn/${icon}@2x.png`} alt="icon" />
       <div className="text-md space-x-4 text-xs">
         <span>
           {item?.temp?.max || ""}

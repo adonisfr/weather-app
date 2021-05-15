@@ -30,7 +30,7 @@ const Current = () => {
   if (weather) {
     return (
       <div className="flex flex-col items-center mb-6">
-        <img src={`http://openweathermap.org/img/wn/${icon}@4x.png`} alt="icon" />
+        <img src={`https://openweathermap.org/img/wn/${icon}@4x.png`} alt="icon" />
         <div className="flex flex-col space-y-12 items-center text-gray-100">
           <div className="">
             <span className="text-6xl">{weather?.main?.temp}</span>
